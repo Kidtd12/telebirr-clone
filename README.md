@@ -1,17 +1,88 @@
-# telebirr_clone_flutter
+# Telebirr Clone (Flutter)
 
-A new Flutter project.
+Telebirr Clone is a Flutter wallet app inspired by the Telebirr experience.
+It includes authentication flow screens, wallet and transaction views, money transfer screens, QR payment flow, and profile management UI.
+
+## Tech Stack
+
+- Flutter (Dart SDK >= 3.6.0 < 4.0.0)
+- Riverpod for state management
+- Dio for HTTP networking
+- Hive for local storage
+- Mobile Scanner for QR workflows
+- Google Fonts + flutter_animate for UI styling and motion
+
+## Features
+
+- Splash, login, registration, and OTP verification screens
+- Wallet dashboard with reusable UI widgets
+- Send money and receive money flows
+- QR payment screen
+- Transaction list/history screen
+- Profile screen
+- Structured service, provider, and model layers
+
+## Project Structure
+
+```text
+lib/
+	core/         # Constants, theme, utilities
+	models/       # Data models
+	providers/    # Riverpod state providers
+	screens/      # App pages (auth, wallet, profile, transactions, etc.)
+	services/     # API, storage, and business services
+	widgets/      # Reusable UI components
+```
+
+## Prerequisites
+
+- Flutter SDK installed
+- Dart SDK compatible with the constraint in `pubspec.yaml`
+- Chrome or Edge (for web run), or Windows desktop support enabled
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+From this folder (`telebirr_clone_flutter`):
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+flutter pub get
+flutter run -d chrome
+```
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+If you want to use the workspace-local Flutter SDK at `../flutter`:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```powershell
+..\flutter\bin\flutter.bat pub get
+..\flutter\bin\flutter.bat run -d chrome
+```
+
+## Running on Windows Desktop
+
+Windows desktop builds with plugins require symlink support.
+If you see `Building with plugins requires symlink support`, enable Developer Mode:
+
+```powershell
+start ms-settings:developers
+```
+
+Then rerun:
+
+```powershell
+..\flutter\bin\flutter.bat run -d windows
+```
+
+## Testing and Analysis
+
+```bash
+flutter analyze
+flutter test
+```
+
+## Backend Integration
+
+The app is designed to work with a .NET backend API (see the workspace backend project).
+Update API base URLs and endpoints in the service/constants layer as needed for your environment.
+
+## License
+
+This project currently has no explicit license file. Add one if you plan to distribute or open-source it broadly.
