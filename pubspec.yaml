@@ -1,0 +1,39 @@
+name: telebirr_clone_flutter
+description: Telebirr-style mobile wallet (Flutter) with .NET backend.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # State management
+  flutter_riverpod: ^2.6.1
+
+  # Networking
+  dio: ^5.7.0
+
+  # Local storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # QR scanning
+  mobile_scanner: ^6.0.2
+
+  # UI
+  google_fonts: ^6.2.1
+  flutter_animate: ^4.5.0
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
