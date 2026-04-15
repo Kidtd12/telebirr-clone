@@ -4,7 +4,6 @@ Telebirr Clone is a Flutter wallet app inspired by the Telebirr experience.
 It includes authentication flow screens, wallet and transaction views, money transfer screens, QR payment flow, and profile management UI.
 
 ## Tech Stack
-## Tech Stack
 
 - Flutter (Dart SDK >= 3.6.0 < 4.0.0)
 - Riverpod for state management
