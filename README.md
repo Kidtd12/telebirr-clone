@@ -69,7 +69,7 @@ Then rerun:
 
 ```powershell
 ..\flutter\bin\flutter.bat run -d windows
-```
+```..\flutter\bin\flutter.bat run -d windows
 
 ## Testing and Analysis
 
